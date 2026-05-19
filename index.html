@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AverySpot USA | City by city local guide</title>
+  <meta name="description" content="Explore the top U.S. metros city by city with official visitor links, maps, hotels, restaurants, events, shopping, sports, nightlife, wellness, and video discovery.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#2563eb">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="AverySpot USA home">
+      <span class="brand-mark">AS</span>
+      <span><strong>AverySpot</strong><small>USA</small></span>
+    </a>
+    <nav class="top-nav" aria-label="Primary navigation">
+      <a href="#cities">Cities</a>
+      <a href="#categories">Categories</a>
+      <a href="#plan">Plan</a>
+      <a href="#advertise">Advertise</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Top 50 U.S. metros</p>
+        <h1>Find the best of every major American city.</h1>
+        <p class="hero-text">Official city resources, durable local links, useful booking actions, video discovery, and category by category guidance in one fast national directory.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#cities">Explore cities</a>
+          <a class="button secondary" href="#categories">Browse categories</a>
+        </div>
+      </div>
+      <div class="hero-panel" id="heroPanel"></div>
+    </section>
+    <section id="plan" class="section action-strip" aria-labelledby="planTitle">
+      <div>
+        <p class="eyebrow">Plan fast</p>
+        <h2 id="planTitle">Choose a city, then jump straight to the thing you need.</h2>
+      </div>
+      <div id="quickActions" class="quick-actions"></div>
+    </section>
+    <section id="categories" class="section" aria-labelledby="categoriesTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Categories</p>
+        <h2 id="categoriesTitle">A richer local marketplace.</h2>
+      </div>
+      <div id="categoryGrid" class="category-grid"></div>
+    </section>
+    <section id="cities" class="section" aria-labelledby="citiesTitle">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">City index</p>
+          <h2 id="citiesTitle">Top 50 metros, city by city.</h2>
+        </div>
+        <div class="filters">
+          <input id="citySearch" type="search" placeholder="Search city, state, or region" aria-label="Search cities">
+          <select id="regionFilter" aria-label="Filter by region">
+            <option value="all">All regions</option>
+          </select>
+        </div>
+      </div>
+      <div id="cityGrid" class="city-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>No cities found. Try another search.</p>
+    </section>
+    <section id="advertise" class="section advertise-band" aria-labelledby="advertiseTitle">
+      <div>
+        <p class="eyebrow">Local media</p>
+        <h2 id="advertiseTitle">Built for discovery, booking, and city by city advertising.</h2>
+        <p>Inspired by AverySpot's digital signage idea, this version gives each metro a cleaner place for visitor resources, local brands, event links, and action oriented category discovery.</p>
+      </div>
+      <a class="button primary" href="mailto:Info@averyspot.com">Contact AverySpot</a>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 AverySpot USA. Independent city discovery concept.</p>
+    <a href="mailto:Info@averyspot.com">Info@averyspot.com</a>
+  </footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
